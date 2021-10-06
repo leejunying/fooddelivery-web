@@ -1,0 +1,17 @@
+.navbar__main{
+    background-color: #e8ecde;
+}
+
+.nav__hover:hover{
+    text-decoration: underline;
+}
+
+.navbar__main nav{
+   padding: 10px 50px; 
+}
+
+.d-flex button{
+    margin-left: 10px; 
+    font-weight: bold;
+}
+
