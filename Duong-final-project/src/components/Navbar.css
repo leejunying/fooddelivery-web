@@ -1,5 +1,7 @@
 .navbar__main{
     background-color: #e8ecde;
+    box-shadow: 0 6px 2px -2px rgba(0,0,0,.2);
+    z-index: 1; 
 }
 
 .nav__hover:hover{
