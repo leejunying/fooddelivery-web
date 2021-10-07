@@ -1,0 +1,31 @@
+.product{
+    width: 614px; 
+    height: 172px;
+    display: flex;
+    border-radius: 7px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .3s;
+    cursor: pointer; 
+    margin: 20px; 
+}
+
+.product:hover{
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.02);
+}
+
+.product__info{
+    padding: 20px;
+    display: flex; 
+    flex-direction: column;
+}
+
+.product__info p{
+    margin: 10px 0;
+}
+
+.product img{
+    width: 200px; 
+    height: 100%; 
+    object-fit:cover; 
+}
