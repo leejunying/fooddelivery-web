@@ -1,20 +1,21 @@
 import React from 'react'
 import './Product.css';
+import LabelImportantIcon from '@mui/icons-material/LabelImportant';
 
-function Product({id, title, description, type, price, image}) {
+function Product({id, title, address, type, image}) {
 
     return (
         <div className = 'product'>
+            <img src={image} alt = 'Product' className='product__image'/>
             <div className = 'product__info'>
                 <h6>{title}</h6>
-                <span>{description}</span>
-                <span>{type }</span>
-                <p className = 'product__price'>
-                    <small>$</small>
-                    <small>{price}</small>  
-                </p>
+                <p>{address}</p>  
             </div>
-            <img src={image} alt = 'Product' className='product__image'/>
+            <div className = 'product__type'>
+                {LabelImportantIcon}
+                <p>{type}</p>
+            </div> 
+            
         </div>
     )
 }

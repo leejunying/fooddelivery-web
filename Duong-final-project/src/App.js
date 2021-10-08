@@ -1,3 +1,4 @@
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -9,12 +10,14 @@ function App() {
   return (
     <Router>
       <div>
-        <Route path="/">
-          <Navbar />
-          <Banner />
-          <Menu />
-          <Footer />
-        </Route>
+        <Switch>
+          <Route path="/">
+            <Navbar />
+            <Banner />
+            <Menu />
+            <Footer />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );

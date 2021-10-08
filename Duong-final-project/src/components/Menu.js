@@ -8,33 +8,14 @@ function Menu() {
       <Product
         id={1}
         title={"Red Aubergine Pureé with Burnt Toast"}
-        description={
+        address={
           "Whipped roasted eggplant & red pepper puree with char-grilled baguette."
         }
         type={"Vegan · Vegetarian · Organic"}
         price={`15.00 `}
         image={image1}
       />
-      <Product
-        id={1}
-        title={"Red Aubergine Pureé with Burnt Toast"}
-        description={
-          "Whipped roasted eggplant & red pepper puree with char-grilled baguette."
-        }
-        type={"Vegan · Vegetarian · Organic"}
-        price={`15.00 `}
-        image={image1}
-      />
-       <Product
-        id={1}
-        title={"Red Aubergine Pureé with Burnt Toast"}
-        description={
-          "Whipped roasted eggplant & red pepper puree with char-grilled baguette."
-        }
-        type={"Vegan · Vegetarian · Organic"}
-        price={`15.00 `}
-        image={image1}
-      />
+
     </div>
   );
 }

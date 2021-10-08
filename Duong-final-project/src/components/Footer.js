@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 function Footer() {
   return (
@@ -6,44 +7,42 @@ function Footer() {
       <div className="container-fluid">
         <div className="row">
           <div className="col order-first col__footer">
-            <h4>Company</h4>
-            <a href="#">- About</a>
-            <a href="#">- Blog</a>
-            <a href="#">- Careers</a>
-            <a href="#">- Report Fraud</a>
+            <div className = "footer__title">Discovery</div>
+            <a href="#">Mobile apps</a>
+            <a href="#">Write a review</a>
+            <a href="#">Create collections</a>
+            <a href="#">Rewards</a>
+            <a href="#">Privacy</a>
+            <a href="#">Term of use</a>
           </div>
           <div className="col col__footer">
-            <h4>For you</h4>
-            <a href="#">- Privacy</a>
-            <a href="#">- Terms</a>
-            <a href="#">- Security</a>
-            <a href="#">- Sitemap</a>
-            <a href="#">- Code of conduct</a>
+            <div className = 'footer__title'>Company</div>
+            <a href="#">About us</a>
+            <a href="#">Support</a>
+            <a href="#">Jobs</a>
+            <a href="#">Investors</a>
+            <a href="#">Give Us Feedbacks</a>
+            <a href="#">Regulation</a>
+            <a href="#">Service agreement</a>
+            <a href="#">Contact</a>
           </div>
           <div className="col col__footer">
-            <h4>FoodHub Newsletter</h4>
-            <p>Stay updated with new offers from FoodHub</p>
-            <div className="col__sendEmail">
-              <input
-                type="email"
-                className=""
-                placeholder="Your email address"
-                aria-label="Username"
-                aria-describedby="addon-wrapping"
-              />
-              <button className="btn btn-success" type="submit">
-                SEND
-              </button>
-            </div>
+            <div className = 'footer__title'>Join us on</div>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Youtube</a>
+            <a href="#">Google</a>
+            <a href="#">Shopee</a>
+            <a href="#"></a>
           </div>
           <div className="col order-last col__footer">
-            <h4>Resources/ Stack Used</h4>
-            <a href="#">- React Material UI redux</a>
-            <a href="#">- NodeJs</a>
-            <a href="#">- Express</a>
-            <a href="#">- MongoDB</a>
-            <a href="#">- Zomato</a>
-            <a href="#">- Freepik</a>
+            <div className = 'footer__title'>Join us on</div>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Youtube</a>
+            <a href="#">Google</a>
+            <a href="#">Shopee</a>
+            <a href="#"></a>
           </div>
         </div>
       </div>

@@ -1,22 +1,37 @@
 .footer{
-    padding: 60px 50px; 
-    background-color: #bcbfb4; 
+    padding: 60px 100px; 
+    background-color: #fff; 
+    display: flex; 
+    justify-content: center;
+    width: 100%; 
 }
+
 .col__footer{
     display: flex;
     flex-direction: column; 
-    align-items: center;
+    align-items: flex-start;
+
+}
+
+
+.footer__title{
+    font-weight: 700;
+    color: #aaa; 
+    border-bottom: rgb(220, 210, 210) 1px solid; 
+    float: left; 
+    width: 95%;
+    margin-bottom: 5px;
+    padding-bottom: 5px;  
 }
 
 .col__footer a{
-    color: black; 
+    color: #1D95CB; 
     text-decoration: none;
     transition: .3s; 
 }
 
 
 .col__footer a:hover{
-    color: black; 
     text-decoration: underline;
 }
 
