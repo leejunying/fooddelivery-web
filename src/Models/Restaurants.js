@@ -8,9 +8,9 @@ const Restaurants_Model = new Schema({
         default: Date.now,
     },
 
-    //Thuộc location
-    Locationid: {
-        type: Object,
+    //Thuộc location ref là Collection của Locationid
+    Location: {
+        type: Schema.Types.ObjectId, ref: 'Location'  ,
         required: true,
     },
 

@@ -9,8 +9,8 @@ const Menus_Model = new Schema({
     },
 
     //Thuộc nhà hàng 
-    Restaurantid: {
-        type: Object,
+    Restaurant: {
+        type: Schema.Types.ObjectId, ref: 'Restaurants' ,
         required: true,
     },
 

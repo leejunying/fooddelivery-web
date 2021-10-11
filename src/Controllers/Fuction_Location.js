@@ -35,6 +35,7 @@ const Add = async(data) => {
             const newdata = await Location_Model.create({
                 nation: data.nation,
                 province: data.province,
+                key:data.key,
                 district: data.district,
             });
 
@@ -64,9 +65,9 @@ const Delete = async(data) => {
     }
 };
 
-const Update = async(data) => {
+const Update = async(data, newdata) => {
     try {
-        const updatedata = await Location_Model.updateOne({ _id: data }, data);
+        const updatedata = await Location_Model.updateOne({nation:data.nation,province:data.province }, newdata);
 
         if (updatedata) {
             return true;

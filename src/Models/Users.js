@@ -9,6 +9,30 @@ const Users_Model = new Schema({
     },
 
 
+    Firstname:{
+
+        type:String,
+        required:true,
+
+
+    },
+
+    Lastname:{
+
+
+        type:String,
+        required:true,
+
+    },
+
+    Birthday:{
+
+
+        type:String,
+        required:true,
+
+    },
+
 
     Account: {
         type: String,
