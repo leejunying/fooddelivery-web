@@ -10,7 +10,6 @@ const Main=[
         exact:true,
         main:()=><Home></Home>
     },
-    
 
     // {
     //     path:'/Products',

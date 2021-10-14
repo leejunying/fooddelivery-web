@@ -1,6 +1,9 @@
+import React from 'react';
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Main from "./Routers/Main";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+// import Main from "./Routers/Main";
+import Product from "./Components/Product";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 function App() {
@@ -29,6 +32,9 @@ function App() {
         <Switch>
           <Route path="/">
             <Header/>
+            <Product
+              
+            />
             <Footer/>
           </Route>
         </Switch>

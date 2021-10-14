@@ -1,0 +1,13 @@
+nav{
+    padding: 0 170px; 
+}
+
+.nav__list li{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.input__item{
+    width: 350px ;   
+}    

@@ -1,6 +1,5 @@
 import React from 'react'
 import './Product.css';
-import LabelImportantIcon from '@mui/icons-material/LabelImportant';
 
 function Product({id, title, address, type, image}) {
 
@@ -12,7 +11,6 @@ function Product({id, title, address, type, image}) {
                 <p>{address}</p>  
             </div>
             <div className = 'product__type'>
-                {LabelImportantIcon}
                 <p>{type}</p>
             </div> 
             
