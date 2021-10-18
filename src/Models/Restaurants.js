@@ -2,73 +2,83 @@ const mongoose = require("mongoose");
 
 const { Schema } = mongoose;
 
-const Restaurants_Model = new Schema({
+const Restaurants_Model = new Schema(
+  {
     create_date: {
-        type: Date,
-        default: Date.now,
+      type: Date,
+      default: Date.now,
     },
 
     //Thuộc location ref là Collection của Locationid
     Location: {
-        type: Schema.Types.ObjectId, ref: 'Location'  ,
-        required: true,
+      type: Object,
+      required: true,
     },
 
-
-    Name: {
-        type: String,
-        required: true,
+    // Title: {
+    // Name:"Heo Mọi Quán",
+    // Street:"Bàn Cờ" }
+    Title: {
+      type: Object,
+      required: true,
     },
+
+    //  //{
+    //      Type:"Nhà hàng",
+    //      Object:"Gia đình"
+    // Foodtype:"Food"
+
+    //  }
 
     //Loại nhà hàng || quán
-    Types: {
-        type: String,
-        require: true,
+    Media: {
+      type: String,
+      require: true,
     },
-
+    Types: {
+      type: Object,
+      require: true,
+    },
 
     Address: {
-        type: String,
-        require: true,
+      type: String,
+      require: true,
     },
 
+    Status: {
+      type: String,
+      default: "Active",
+    },
+
+    Openat: {
+      type: String,
+      require: true,
+    },
 
     // exp:{Min:300k , Max:500k}
     Cost: {
-
-        type: Object,
-        require: true,
-
-
+      type: Object,
+      require: true,
     },
 
     // Tổng số điểm đánh giá
     Rating: {
-
-        type: Number,
-        default: 0
-
+      type: Array,
+      default: [],
     },
 
-
     //Lưu số đánh giá
-    Reviews: {
-
-        type: Object,
-        default: {
-
-            best: 0,
-            good: 0,
-            normal: 0,
-            bad: 0,
-
-
-        }
-
-
-
-    }
-
-}, { collection: "Restaurants" });
+    Feel: {
+      type: Object,
+      default: {
+        best: 0,
+        good: 0,
+        normal: 0,
+        bad: 0,
+      },
+    },
+  },
+  { collection: "Restaurants" }
+);
 
 module.exports = mongoose.model("Restaurants", Restaurants_Model);

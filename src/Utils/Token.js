@@ -1,18 +1,17 @@
 const jwt = require("jsonwebtoken");
-const jwtConfig = require("../Configs/token.js")
+const jwtConfig = require("../Configs/token.js");
 
 const generateToken = async (user) => {
-
-  console.log(user)
+  delete user.Password;
 
   return await jwt.sign(
-    { 
-      _id: user._id,
+    {
+      user,
+
       //mask userdata
-      
     },
     jwtConfig.secretKey,
-  
+
     {
       subject: user._id.toString(),
       expiresIn: "365d",
@@ -21,8 +20,7 @@ const generateToken = async (user) => {
 };
 
 const verifyToken = async (token) => {
-
-   console.log(jwtConfig.secreKey)
+  console.log(jwtConfig.secreKey);
   return await jwt.verify(token, jwtConfig.secretKey);
 };
 

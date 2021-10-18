@@ -3,11 +3,77 @@ const router = express.Router();
 const utils = require("../Utils/Commonfuction");
 const Controller = require("../Controllers/Fuction_Location");
 
+
+
+// Demo add
+// {   
+//   "data":{
+//       "nation": "VIETNAM",
+//       "province": "HỒ CHÍ VINH",
+//       "key":"HCM",
+//       "district": [
+//           "Phường 1",
+//           "Phường 2",
+//           "Phường 3",
+//           "Phường 4",
+//           "Phường 5",
+//           "Phường 6",
+//           "Phường 7",
+//           "Phường 8",
+//           "Phường 9",
+//           "Phường 10",
+//           "Phường 11",
+//           "Phường 12",
+//           "Bình Tân",
+//           "Bình Thạnh",
+//           "Tân Phú",
+//           "Tân Bình",
+//           "Thủ Đức",
+//           "Huyện Củ Chi",
+//           "Huyện Cần Giờ",
+//           "Huyện Nhà Bè",
+//           "Huyện Hóc Môn",
+//           "Huyện Bình Chánh",
+//           "Gò Vấp",
+//           "Phú Nhuận"
+//       ]
+//   }
+// }
+
+ 
+
+// {
+    
+    
+//   "data":{
+//       "nation": "VIETNAM",
+//       "province": "HỒ CHÍ VINH"
+
+//   },
+  
+//   "update": {
+//       "nation": "VIETNAM",
+//       "province": "HỒ CHÍ MINH",
+//       "key":"HCM",
+//       "district": [
+//           "Phường 1",
+//           "Phường 2",
+      
+//       ]
+//   }
+// }
+
+
+
+
+
+
+
 router.get("/get", async (req, res) => {
   const result = await Controller.Get();
 
   if (result == false)
-    res.send({ status: "404", message: "LOcation Load Failed" });
+    res.send({ status: "404", message: "Location Load Failed" });
   else res.send({ status: "200", data: result });
 });
 
@@ -42,6 +108,10 @@ router.patch("/delete", async (req, res) => {
 
 router.patch("/update", async (req, res) => {
   const { data, update } = req.body;
+
+
+
+
 
   const result = await Controller.Update(data, update);
 
