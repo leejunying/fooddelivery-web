@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Footer.css";
+import "../Styled/Footer.css";
 function Footer() {
   return (
     <div className="footer">
       <div className="container-fluid">
         <div className="row">
           <div className="col order-first col__footer">
-            <div className = "footer__title">Discovery</div>
+            <div className="footer__title">Discovery</div>
             <a href="#">Mobile apps</a>
             <a href="#">Write a review</a>
             <a href="#">Create collections</a>
@@ -16,7 +16,7 @@ function Footer() {
             <a href="#">Term of use</a>
           </div>
           <div className="col col__footer">
-            <div className = 'footer__title'>Company</div>
+            <div className="footer__title">Company</div>
             <a href="#">About us</a>
             <a href="#">Support</a>
             <a href="#">Jobs</a>
@@ -27,7 +27,7 @@ function Footer() {
             <a href="#">Contact</a>
           </div>
           <div className="col col__footer">
-            <div className = 'footer__title'>Join us on</div>
+            <div className="footer__title">Join us on</div>
             <a href="#">Facebook</a>
             <a href="#">Instagram</a>
             <a href="#">Youtube</a>
@@ -36,7 +36,7 @@ function Footer() {
             <a href="#"></a>
           </div>
           <div className="col order-last col__footer">
-            <div className = 'footer__title'>Join us on</div>
+            <div className="footer__title">Join us on</div>
             <a href="#">Facebook</a>
             <a href="#">Instagram</a>
             <a href="#">Youtube</a>

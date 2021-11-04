@@ -1,42 +1,24 @@
-import axios from 'axios'
+import axios from "axios";
 
+var host = "http://localhost:4000";
 
-var host="http://localhost:4000"
+export const Load = () => {
+  return axios.get(`${host}/location/get`);
+};
 
-export const Load_Location =()=>{
+export const Add = (adddata) => {
+  return axios.patch(`${host}/location/add`, adddata);
+};
 
+export const Delete = (deletedata) => {
+  return axios.patch(`${host}/location/delete`, deletedata);
+};
 
-   return  axios.get(`${host}/location/get`)
-  
+export const Update = (selectdata, updatedata) => {
+  let obj = {
+    data: selectdata,
+    update: updatedata,
+  };
 
-}
-
-export const Add_Location=(adddata)=>{
-
-
-    return axios.patch(`${host}/location/add`,adddata)
-
-}
-
-
-export const Delete_Location=(deletedata)=>{
-
-
-    return axios.patch(`${host}/location/delete`,deletedata)
-
-}
-
-export const Update_Location=(selectdata,updatedata)=>{
-
-    let obj={
-
-
-        data:selectdata,
-        update:updatedata
-
-    }
-
-    return axios.patch(`${host}/location/update`,obj)
-
-}
-
+  return axios.patch(`${host}/location/update`, obj);
+};

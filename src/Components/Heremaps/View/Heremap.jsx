@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { Isonsharelocation } from "../../../Ultis/Common_function";
 //ui.addBubble
 const Map = (props) => {
+  console.log(props.address);
   const mapRef = useRef(null);
   const [location, setLocation] = useState({ lat: 0, lng: 0 });
   const currentlocation = () => {
@@ -37,7 +38,7 @@ const Map = (props) => {
 
       service.geocode(
         {
-          q: `${props.location}`,
+          q: `${props.address}`,
         },
         (result) => {
           if (result.items.length > 0) {

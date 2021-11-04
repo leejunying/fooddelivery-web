@@ -1,5 +1,11 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Main from "./Routers/Main";
+import Footer from "./Components/Footer/View/Footer";
+import Top from "./Components/Header/View/Header";
+import "./App.css";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import Topbar from "./Components/Header/View/Header";
 function App() {
   const Loadcomponents = (routes) => {
     var result = [];
@@ -32,7 +38,9 @@ function App() {
     // </Router>
     <Router path="/">
       <div className="App">
+        <Topbar />
         <Switch>{Loadcomponents(Main)}</Switch>
+        <Footer />
       </div>
     </Router>
   );

@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.col {
+  flex-direction: column;
+}
+.jus-center {
+  justify-content: center;
+}
+.jus-start {
+  justify-content: flex-start;
+}
+.jus-end {
+  justify-content: flex-end;
+}
+.sp-between {
+  justify-content: space-between;
+}
+.sp-around {
+  justify-content: space-around;
+}
+.sp-evenly {
+  justify-content: space-evenly;
+}
+.al-center {
+  align-items: center;
+}
+.al-start {
+  align-items: flex-start;
+}
+.al-end {
+  align-items: flex-end;
+}
+.bd {
+  border: 1px solid red;
+}

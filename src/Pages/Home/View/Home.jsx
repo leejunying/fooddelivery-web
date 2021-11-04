@@ -4,24 +4,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useState } from "react";
 
 const Home = () => {
-
-
-
-
-
-
-
-
-return (
-
-    <Grid>Hello Bạn</Grid>
-
-
-)
-
+  return <Grid className="Home"></Grid>;
 };
-
-
-
 
 export default Home;
