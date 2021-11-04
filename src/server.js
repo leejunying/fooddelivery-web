@@ -6,6 +6,7 @@ require("dotenv").config(); //Cho phép sử dụng dotenv
 const cors = require("cors"); // Khai báo cors để chạy trên trình duyệt
 const app = express();
 var server = require("http").Server(app);
+const ultis=require("../src/Utils/Commonfuction")
 
 server.listen(process.env.PORT, () => {
     console.log(`Sever on ${process.env.PORT}`);
@@ -47,5 +48,10 @@ mongoose
         console.log(err);
         process.exit();
     });
+
+
+
+    let fruits=['A', 'B', 'C', 'A', 'C']
+    ultis.Totaltree(fruits)
 
 app.use("/", Router);

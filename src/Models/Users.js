@@ -10,6 +10,9 @@ const Users_Model = new Schema(
     },
 
     // Admin,User,something else
+
+    // Accountype:"user"
+    // Accountype:"admin"
     Accounttype: {
       type: String,
       require: true,

@@ -27,9 +27,12 @@ const hashcompare = (Password, hash) => {
   return bcrypt.compare(Password, hash);
 };
 
+
+
 module.exports = {
   isEmptyObject,
   checkdata,
   hashstring,
   hashcompare,
+
 };
